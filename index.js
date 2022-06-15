@@ -112,6 +112,7 @@ function calculatedPerimeterCircle() {
     alert(`The perimeter of the circle is: ${perimeter}cm`)
 };
 
+
 function calculatedAreaCircle(){
     const input = document.getElementById('radio');
     const value = input.value;
