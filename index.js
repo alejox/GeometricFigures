@@ -105,6 +105,8 @@ function calculateIsoscelesArea() {
 
 // Circle
 
+
+
 function calculatedPerimeterCircle() {
     const input = document.getElementById('radio');
     const value = input.value;
