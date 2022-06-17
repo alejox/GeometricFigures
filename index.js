@@ -53,6 +53,12 @@ function calculateSquareArea() {
 
 //Triangle
 
+/* function triangle (){
+    if(inputA !== inputB){
+        
+    }
+} */
+
 function calculateTrianglePerimeter() {
     const inputA = document.getElementById('inputTriangleA');
     const inputB = document.getElementById('inputTriangleB');
@@ -62,7 +68,7 @@ function calculateTrianglePerimeter() {
     const base = Number(inputC.value);
     const perimeter = trianglePerimeter(sideA, sideB, base);
     alert(`The perimeter of the triangle is: ${perimeter} cm`);
-}
+};
 
 function calculateTriangleArea() {
     const inputC = document.getElementById('inputTriangleC');
@@ -71,7 +77,7 @@ function calculateTriangleArea() {
     const height = Number(inputD.value);
     const area = triangleArea(base, height);
     alert(`The area of the triangle is: ${area} cm`);
-}
+};
 
 // Isosceles triangle
 

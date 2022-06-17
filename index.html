@@ -4,88 +4,133 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/ico.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Geometric figures</title>
   </head>
   <body>
-  <!-----------------------------------Header-------------------------------->
+    <!-----------------------------------Header-------------------------------->
     <header>
+      <img src="./img/ico.svg" alt="" width="100px" />
       <h1>Geometric figures</h1>
       <p>This is an exercise of basic functions in javascript</p>
     </header>
-    
+
     <!-----------------------------Form--------------------------------->
 
-    <!-----------------------------Square--------------------------------->
-    <section>
-      <h2>Calculate the area and perimeter of a square</h2>
-      <form>
-        <label for="inputSquare">
-          Write how long each side of your square is:
-        </label>
-        <input id="inputSquare" type="number">
-        <button type="button" onClick="calculateSquarePerimeter()">Calculate perimeter</button>
-        <button type="button" onClick="calculateSquareArea()">calculate area</button>
-      </form>
-    </section>
-    <!------------------------------Triangle-------------------------->
-    <section>
-      <h2>Calculate the area and perimeter of a triangle</h2>
-      <form>
-        <label for="inputTriangleA">
-          Side A:
-        </label>
-        <input id="inputTriangleA" type="number">
+    <div class="container">
+      <!-----------------------------Square--------------------------------->
+      <div class="card">
+        <section>
+          <h2>Calculate the area and perimeter of a square</h2>
+          <figure>
+            <img src="./img/square.svg" alt="" width="100px" />
+          </figure>
+          <div class="content">
+            <form>
+              <label for="inputSquare">
+                Write how long each side of your square is:
+              </label>
+              <input id="inputSquare" type="number" /><br />
+              <button type="button" onClick="calculateSquarePerimeter()">
+                Calculate perimeter
+              </button>
+              <button type="button" onClick="calculateSquareArea()">
+                calculate area
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+      <!------------------------------Triangle-------------------------->
+      <div class="card">
+        <section>
+          <h2>Calculate the area and perimeter of a triangle</h2>
+          <figure>
+            <img src="./img/triangle.svg" alt="" width="100px" />
+          </figure>
+          <div class="content">
+            <form>
+              <div class="inputs">
+                <div class="inputsBtn">
+                  <label for="inputTriangleA"> Side A: </label>
+                  <input id="inputTriangleA" type="number" />
+                </div>
 
-        <label for="inputTriangleB">
-          Side B:
-        </label>
-        <input id="inputTriangleB" type="number">
+                <div class="inputsBtn">
+                  <label for="inputTriangleB">Side B:</label>
+                  <input id="inputTriangleB" type="number" />
+                </div>
 
-        <label for="inputTriangleC">
-          Base:
-        </label>
-        <input id="inputTriangleC" type="number">
+                <div class="inputsBtn">
+                  <label for="inputTriangleC"> Base: </label>
+                  <input id="inputTriangleC" type="number" />
+                </div>
 
-        <label for="inputTriangleD">
-          Height:
-        </label>
-        <input id="inputTriangleD" type="number">
+                <div class="inputsBtn">
+                  <label for="inputTriangleD"> Height: </label>
+                  <input id="inputTriangleD" type="number" />
+                </div>
+              </div>
 
-        <button type="button" onClick="calculateTrianglePerimeter()">Calculate perimeter</button>
-        <button type="button" onClick="calculateTriangleArea()">calculate area</button>
-      </form>
-    </section>
-    <!-----------------------------Isosceles Triangle-------------------------->
-    <section>
-      <h2>Calculate the area and perimeter of a isosceles triangle</h2>
-      <form>
-        <label for="inputTriangleE">
-          Sides:
-        </label>
-        <input id="inputTriangleE" type="number">
+              <button type="button" onClick="calculateTrianglePerimeter()">
+                Calculate perimeter
+              </button>
+              <button type="button" onClick="calculateTriangleArea()">
+                calculate area
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+      <!---------------------------Isosceles Triangle-------------------------->
+      <div class="card">
+        <section>
+          <h2>Calculate the area and perimeter of a isosceles triangle</h2>
+          <figure>
+            <img src="./img/isosceles.svg" alt="" width="100px" />
+          </figure>
+          <div class="content">
+            <form>
+              <label for="inputTriangleE"> Sides: </label>
+              <input id="inputTriangleE" type="number" /><br />
 
-        <label for="inputTriangleF">
-          Base:
-        </label>
-        <input id="inputTriangleF" type="number">
+              <label for="inputTriangleF"> Base: </label>
+              <input id="inputTriangleF" type="number" /><br />
 
-        <button type="button" onClick="calculateIsoscelesPerimeter()">Calculate perimeter</button>
-        <button type="button" onClick="calculateIsoscelesArea()">calculate area</button>
-      </form>
-    </section>
-    <!-----------------------------Circle-------------------------->
-    <section>
-      <h2>Calculate the area and perimeter of a circle</h2>
-      <form>
-        <label for="radio">
-          Radio:
-        </label>
-        <input id="radio" type="number">
+              <button type="button" onClick="calculateIsoscelesPerimeter()">
+                Calculate perimeter
+              </button>
+              <button type="button" onClick="calculateIsoscelesArea()">
+                calculate area
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+      <!-----------------------------Circle-------------------------->
+      <div class="card">
+        <section>
+          <h2>Calculate the area and perimeter of a circle</h2>
+          <figure>
+            <img src="./img/circle.svg" alt="" width="100px" />
+          </figure>
+          <div class="content">
+            <form>
+              <label for="radio"> Radio: </label>
+              <input id="radio" type="number" /><br />
 
-        <button type="button" onClick="calculatedPerimeterCircle()">Calculate perimeter</button>
-        <button type="button" onClick="calculatedAreaCircle()">Calculate area</button>
-      </form>
-    </section>
+              <button type="button" onClick="calculatedPerimeterCircle()">
+                Calculate perimeter
+              </button>
+              <button type="button" onClick="calculatedAreaCircle()">
+                Calculate area
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
