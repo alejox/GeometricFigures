@@ -31,7 +31,7 @@
               <label for="inputSquare">
                 Write how long each side of your square is:
               </label>
-              <input id="inputSquare" type="number" /><br />
+              <input id="inputSquare" type="number" />cm<br />
               <button type="button" onClick="calculateSquarePerimeter()">
                 Calculate perimeter
               </button>
@@ -39,6 +39,8 @@
                 calculate area
               </button>
             </form>
+            <p id="perimeterSquare"></p>
+            <p id="areaSquare"></p>
           </div>
         </section>
       </div>
@@ -54,22 +56,22 @@
               <div class="inputs">
                 <div class="inputsBtn">
                   <label for="inputTriangleA"> Side A: </label>
-                  <input id="inputTriangleA" type="number" />
+                  <input id="inputTriangleA" type="number" />cm
                 </div>
 
                 <div class="inputsBtn">
                   <label for="inputTriangleB">Side B:</label>
-                  <input id="inputTriangleB" type="number" />
+                  <input id="inputTriangleB" type="number" />cm
                 </div>
 
                 <div class="inputsBtn">
                   <label for="inputTriangleC"> Base: </label>
-                  <input id="inputTriangleC" type="number" />
+                  <input id="inputTriangleC" type="number" />cm
                 </div>
 
                 <div class="inputsBtn">
                   <label for="inputTriangleD"> Height: </label>
-                  <input id="inputTriangleD" type="number" />
+                  <input id="inputTriangleD" type="number" />cm
                 </div>
               </div>
 
@@ -80,6 +82,8 @@
                 calculate area
               </button>
             </form>
+            <p id="perimeterTriangle"></p>
+            <p id="triangleArea"></p>
           </div>
         </section>
       </div>
@@ -93,10 +97,10 @@
           <div class="content">
             <form>
               <label for="inputTriangleE"> Sides: </label>
-              <input id="inputTriangleE" type="number" /><br />
+              <input id="inputTriangleE" type="number" />cm<br />
 
               <label for="inputTriangleF"> Base: </label>
-              <input id="inputTriangleF" type="number" /><br />
+              <input id="inputTriangleF" type="number" />cm<br />
 
               <button type="button" onClick="calculateIsoscelesPerimeter()">
                 Calculate perimeter
@@ -105,6 +109,8 @@
                 calculate area
               </button>
             </form>
+            <p id="isoscelesPerimeter"></p>
+            <p id="isoscelesArea"></p>
           </div>
         </section>
       </div>
@@ -118,7 +124,7 @@
           <div class="content">
             <form>
               <label for="radio"> Radio: </label>
-              <input id="radio" type="number" /><br />
+              <input id="radio" type="number" />cm<br />
 
               <button type="button" onClick="calculatedPerimeterCircle()">
                 Calculate perimeter
@@ -127,6 +133,8 @@
                 Calculate area
               </button>
             </form>
+            <p id="circlePerimeter"></p>
+            <p id="circleArea"></p>
           </div>
         </section>
       </div>
